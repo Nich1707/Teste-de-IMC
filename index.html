@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="contenedorPrincipal" class="contenedor">
+      <div class="contenedor2 item-0">Medidor de I.M.C</div>
+
+      <div for="peso" class="contenedor2 item-1" id="1">
+        Digite seu peso em Kg
+      </div>
+      <div class="contenedor2 item-2">
+        <input
+          class="imputPeso"
+          id="pesoUsuario"
+          type="text"
+          name="kg"
+          inputmode="numeric"
+        />
+      </div>
+
+      <div for="altura" class="contenedor2 item-3">Digite sua altura</div>
+
+      <div class="contenedor2 item-4">
+        <input
+          class="inputAltura"
+          id="alturaUsuario"
+          type="text"
+          name="metro"
+          inputmode="numeric"
+        />
+
+        <button onclick="calculando()" class="Calcular" id="Calcular">
+          Calcular
+        </button>
+      </div>
+    </div>
+    <div id="resultadoUsuario" class="resultado">resultado</div>
+    <script src="index.js"></script>
+  </body>
+</html>
